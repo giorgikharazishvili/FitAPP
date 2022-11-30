@@ -10,11 +10,18 @@ import SwiftUI
 struct ExerciseView: View {
     
     let videoNames = ["strech", "run", "squat", "pushup", "abs", "plank"]
-    let exerciseNames = ["Strech", "Run", "Squat", "Pushup", "Abs", "Plank"]
+    let exerciseNames = ["Stretch", "Run", "Squat", "Pushup", "Abs", "Plank"]
     let index: Int
     
     var body: some View {
-        Text(exerciseNames[index])
+        VStack {
+            HeaderView(exerciseName: exerciseNames[index])
+            Text("Video player")
+            Text("Timer")
+            Text("Start/Done button")
+            Text("Rating")
+            Text("History button")
+        }
     }
 }
 
