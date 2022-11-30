@@ -9,15 +9,16 @@ import SwiftUI
 
 struct HeaderView: View {
     let exerciseName: String
+    
     var body: some View {
         VStack {
             Text(exerciseName)
                 .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                 .fontWeight(.heavy)
-                .foregroundColor(Color.red)
+                .foregroundColor(Color.black)
             HStack {
                 Image(systemName: "hands.sparkles.fill")
-                    .foregroundColor(Color.red)
+                    .foregroundColor(Color.black)
                 Image(systemName: "1.circle")
                 Image(systemName: "2.circle")
                 Image(systemName: "3.circle")
