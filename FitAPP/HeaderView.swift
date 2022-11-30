@@ -16,6 +16,8 @@ struct HeaderView: View {
                 .fontWeight(.heavy)
                 .foregroundColor(Color.red)
             HStack {
+                Image(systemName: "hands.sparkles.fill")
+                    .foregroundColor(Color.red)
                 Image(systemName: "1.circle")
                 Image(systemName: "2.circle")
                 Image(systemName: "3.circle")
