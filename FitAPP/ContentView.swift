@@ -9,7 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ByeView()
+        TabView {
+            WelcomeView()
+            ForEach(0..<5) { number in
+                ExerciseView(index: number)
+            }
+            Text("Exercise2")
+        }
+        .tabViewStyle(PageTabViewStyle())
     }
 }
 

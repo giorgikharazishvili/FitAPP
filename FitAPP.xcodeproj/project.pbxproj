@@ -7,20 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0468F54E29378DA600CC2C33 /* plank.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54829378DA400CC2C33 /* plank.mp4 */; };
+		0468F54F29378DA600CC2C33 /* squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54929378DA400CC2C33 /* squat.mp4 */; };
+		0468F55029378DA600CC2C33 /* pushup.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54A29378DA400CC2C33 /* pushup.mp4 */; };
+		0468F55129378DA600CC2C33 /* abs.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54B29378DA500CC2C33 /* abs.mp4 */; };
+		0468F55229378DA600CC2C33 /* run.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54C29378DA500CC2C33 /* run.mp4 */; };
+		0468F55329378DA600CC2C33 /* strech.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54D29378DA500CC2C33 /* strech.mp4 */; };
 		04A7373029376BF4008E9227 /* FitAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7372F29376BF4008E9227 /* FitAPPApp.swift */; };
 		04A7373229376BF4008E9227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7373129376BF4008E9227 /* ContentView.swift */; };
 		04A7373429376BF5008E9227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7373329376BF5008E9227 /* Assets.xcassets */; };
 		04A7373729376BF5008E9227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7373629376BF5008E9227 /* Preview Assets.xcassets */; };
 		04A7373E29376F0F008E9227 /* ByeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7373D29376F0F008E9227 /* ByeView.swift */; };
+		04A7374029378934008E9227 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7373F29378934008E9227 /* WelcomeView.swift */; };
+		04A7374229378946008E9227 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7374129378946008E9227 /* ExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0468F54829378DA400CC2C33 /* plank.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = plank.mp4; sourceTree = "<group>"; };
+		0468F54929378DA400CC2C33 /* squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = squat.mp4; sourceTree = "<group>"; };
+		0468F54A29378DA400CC2C33 /* pushup.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pushup.mp4; sourceTree = "<group>"; };
+		0468F54B29378DA500CC2C33 /* abs.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = abs.mp4; sourceTree = "<group>"; };
+		0468F54C29378DA500CC2C33 /* run.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = run.mp4; sourceTree = "<group>"; };
+		0468F54D29378DA500CC2C33 /* strech.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = strech.mp4; sourceTree = "<group>"; };
 		04A7372C29376BF4008E9227 /* FitAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A7372F29376BF4008E9227 /* FitAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitAPPApp.swift; sourceTree = "<group>"; };
 		04A7373129376BF4008E9227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04A7373329376BF5008E9227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A7373629376BF5008E9227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04A7373D29376F0F008E9227 /* ByeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByeView.swift; sourceTree = "<group>"; };
+		04A7373F29378934008E9227 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		04A7374129378946008E9227 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +50,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0468F55429378F2000CC2C33 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				0468F54D29378DA500CC2C33 /* strech.mp4 */,
+				0468F54C29378DA500CC2C33 /* run.mp4 */,
+				0468F54929378DA400CC2C33 /* squat.mp4 */,
+				0468F54A29378DA400CC2C33 /* pushup.mp4 */,
+				0468F54B29378DA500CC2C33 /* abs.mp4 */,
+				0468F54829378DA400CC2C33 /* plank.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		04A7372329376BF4008E9227 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +83,13 @@
 			isa = PBXGroup;
 			children = (
 				04A7372F29376BF4008E9227 /* FitAPPApp.swift */,
+				04A7374329378965008E9227 /* Views. */,
 				04A7373129376BF4008E9227 /* ContentView.swift */,
+				04A7373F29378934008E9227 /* WelcomeView.swift */,
+				04A7374129378946008E9227 /* ExerciseView.swift */,
 				04A7373D29376F0F008E9227 /* ByeView.swift */,
 				04A7373329376BF5008E9227 /* Assets.xcassets */,
+				0468F55429378F2000CC2C33 /* Videos */,
 				04A7373529376BF5008E9227 /* Preview Content */,
 			);
 			path = FitAPP;
@@ -68,6 +101,13 @@
 				04A7373629376BF5008E9227 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04A7374329378965008E9227 /* Views. */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views.;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +168,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0468F55229378DA600CC2C33 /* run.mp4 in Resources */,
+				0468F55129378DA600CC2C33 /* abs.mp4 in Resources */,
+				0468F55329378DA600CC2C33 /* strech.mp4 in Resources */,
 				04A7373729376BF5008E9227 /* Preview Assets.xcassets in Resources */,
 				04A7373429376BF5008E9227 /* Assets.xcassets in Resources */,
+				0468F55029378DA600CC2C33 /* pushup.mp4 in Resources */,
+				0468F54F29378DA600CC2C33 /* squat.mp4 in Resources */,
+				0468F54E29378DA600CC2C33 /* plank.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +189,8 @@
 				04A7373E29376F0F008E9227 /* ByeView.swift in Sources */,
 				04A7373229376BF4008E9227 /* ContentView.swift in Sources */,
 				04A7373029376BF4008E9227 /* FitAPPApp.swift in Sources */,
+				04A7374029378934008E9227 /* WelcomeView.swift in Sources */,
+				04A7374229378946008E9227 /* ExerciseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ByeView: View {
     var body: some View {
-        Text("Bye bye, World!")
+        Text("Bye bye, World!!!")
             .font(.largeTitle)
             .fontWeight(.heavy)
             .foregroundColor(.red)
