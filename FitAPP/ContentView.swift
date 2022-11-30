@@ -16,7 +16,10 @@ struct ContentView: View {
             }
             Text("Exercise2")
         }
-        .tabViewStyle(PageTabViewStyle())
+        
+        .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+        .ignoresSafeArea()
+        
     }
 }
 

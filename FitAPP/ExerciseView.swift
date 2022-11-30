@@ -17,7 +17,8 @@ struct ExerciseView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.black]), startPoint: .topTrailing, endPoint: .bottomLeading).ignoresSafeArea()
+             LinearGradient(gradient: Gradient(colors: [Color.blue, Color.black]), startPoint: .topTrailing, endPoint: .bottomLeading).ignoresSafeArea()
+            
             
             GeometryReader { geometry in
                 VStack {
@@ -36,7 +37,7 @@ struct ExerciseView: View {
                             .foregroundColor(.red)
                     }
                     
-                    Text(Date().addingTimeInterval(interval), style: .relative)
+                    Text(Date().addingTimeInterval(interval), style: .timer)
                         .padding(10)
                         .font(.system(size: 60))
                         .foregroundColor(.red)
@@ -64,21 +65,22 @@ struct ExerciseView: View {
                         .cornerRadius(40)
                         .padding(.top, 20)
                         .shadow(color: .gray, radius: 15, x: 0, y: 0)
-                
-                        Button("History") {}
-                            .font(.title2)
-                            .fontWeight(.heavy)
-                            .padding(5)
-                            .foregroundColor(.white)
-                            .background(.black)
-                            .shadow(color: .gray, radius: 10, x: 0, y: 0)
-                            .cornerRadius(10)
-                            .padding( .top, 50)
+                    
+                    Button("History") {}
+                        .font(.title2)
+                        .fontWeight(.heavy)
+                        .padding(5)
+                        .foregroundColor(.white)
+                    // .background(.black)
+                        .shadow(color: .gray, radius: 10, x: 0, y: 0)
+                        .cornerRadius(10)
+                        .padding( .top, 50)
                 }
             }
         }
     }
 }
+
 
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
