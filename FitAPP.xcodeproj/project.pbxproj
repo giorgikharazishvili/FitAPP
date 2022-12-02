@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04430DD9293A99AC005777CA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04430DD8293A99AC005777CA /* HistoryView.swift */; };
+		04430DDB293AA938005777CA /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04430DDA293AA938005777CA /* DateExtension.swift */; };
 		0468F54E29378DA600CC2C33 /* plank.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54829378DA400CC2C33 /* plank.mp4 */; };
 		0468F54F29378DA600CC2C33 /* squat.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54929378DA400CC2C33 /* squat.mp4 */; };
 		0468F55029378DA600CC2C33 /* pushup.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54A29378DA400CC2C33 /* pushup.mp4 */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04430DD8293A99AC005777CA /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		04430DDA293AA938005777CA /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		0468F54829378DA400CC2C33 /* plank.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = plank.mp4; sourceTree = "<group>"; };
 		0468F54929378DA400CC2C33 /* squat.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = squat.mp4; sourceTree = "<group>"; };
 		0468F54A29378DA400CC2C33 /* pushup.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = pushup.mp4; sourceTree = "<group>"; };
@@ -86,6 +90,7 @@
 			children = (
 				04A7372F29376BF4008E9227 /* FitAPPApp.swift */,
 				04A7374329378965008E9227 /* Views. */,
+				04430DDA293AA938005777CA /* DateExtension.swift */,
 				04A7373329376BF5008E9227 /* Assets.xcassets */,
 				0468F55429378F2000CC2C33 /* Videos */,
 				04A7373529376BF5008E9227 /* Preview Content */,
@@ -109,6 +114,7 @@
 				04A7374129378946008E9227 /* ExerciseView.swift */,
 				0468F5572937A3E300CC2C33 /* HeaderView.swift */,
 				04A7373D29376F0F008E9227 /* RatingView.swift */,
+				04430DD8293A99AC005777CA /* HistoryView.swift */,
 			);
 			name = Views.;
 			sourceTree = "<group>";
@@ -189,6 +195,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04430DD9293A99AC005777CA /* HistoryView.swift in Sources */,
+				04430DDB293AA938005777CA /* DateExtension.swift in Sources */,
 				04A7373E29376F0F008E9227 /* RatingView.swift in Sources */,
 				0468F5582937A3E300CC2C33 /* HeaderView.swift in Sources */,
 				04A7373229376BF4008E9227 /* ContentView.swift in Sources */,
@@ -325,11 +333,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FitAPP/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -353,11 +363,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FitAPP/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

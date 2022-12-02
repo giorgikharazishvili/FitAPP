@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct HeaderView: View {
-    let exerciseName: String
+    let titleText: String
     
     var body: some View {
         VStack {
-            Text(exerciseName)
+            Text(titleText)
                 .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                 .fontWeight(.heavy)
                 .foregroundColor(Color.black)
@@ -32,7 +32,7 @@ struct HeaderView: View {
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            HeaderView(exerciseName: "Stretch")
+            HeaderView(titleText: "Stretch")
                 .previewLayout(.sizeThatFits)
 //            HeaderView(exerciseName: "Stretch")
 //                .previewLayout(.sizeThatFits)
