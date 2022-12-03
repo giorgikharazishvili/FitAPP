@@ -10,8 +10,8 @@ import AVKit
 
 struct ExerciseView: View {
     
-    let videoNames = ["strech", "run", "squat", "pushup", "abs", "plank"]
-    let exerciseNames = ["Stretch", "Run", "Squat", "Pushup", "Abs", "Plank"]
+//    let videoNames = ["strech", "run", "squat", "pushup", "abs", "plank"]
+//    let exerciseNames = ["Stretch", "Run", "Squat", "Pushup", "Abs", "Plank"]
     let index: Int
     let interval: TimeInterval = 30
     
@@ -22,9 +22,9 @@ struct ExerciseView: View {
             
             GeometryReader { geometry in
                 VStack {
-                    HeaderView(titleText: exerciseNames[index])
+                    HeaderView(titleText: Exercise.exercises[index].exerciseName)
                     if let url = Bundle.main.url(
-                        forResource: videoNames[index],
+                        forResource: Exercise.exercises[index].videoName,
                         withExtension: "mp4") {
                         VideoPlayer(player: AVPlayer(url: url))
                             .cornerRadius(20)
@@ -33,14 +33,14 @@ struct ExerciseView: View {
                             .padding(.horizontal, 2)
                             .shadow(color: .gray, radius: 20, x: 0, y: 0)
                     } else {
-                        Text("Couldn’t find \(videoNames[index]).mp4")
+                        Text("Couldn’t find \(Exercise.exercises[index].videoName).mp4")
                             .foregroundColor(.red)
                     }
                     
                     Text(Date().addingTimeInterval(interval), style: .timer)
                         .padding(10)
                         .font(.system(size: 60))
-                        .foregroundColor(.red)
+                        .foregroundColor(.white)
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .background(

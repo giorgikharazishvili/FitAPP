@@ -16,6 +16,11 @@
 		0468F55229378DA600CC2C33 /* run.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54C29378DA500CC2C33 /* run.mp4 */; };
 		0468F55329378DA600CC2C33 /* strech.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 0468F54D29378DA500CC2C33 /* strech.mp4 */; };
 		0468F5582937A3E300CC2C33 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0468F5572937A3E300CC2C33 /* HeaderView.swift */; };
+		047AB9FD293B55560084C220 /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047AB9FC293B55560084C220 /* SuccessView.swift */; };
+		047ABA01293B66D50084C220 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047ABA00293B66D50084C220 /* Exercise.swift */; };
+		047ABA04293B6C2C0084C220 /* HistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047ABA03293B6C2C0084C220 /* HistoryDetails.swift */; };
+		047ABA06293B71DB0084C220 /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047ABA05293B71DB0084C220 /* HistoryStoreDevData.swift */; };
+		047ABA08293B76FA0084C220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 047ABA07293B76FA0084C220 /* Localizable.strings */; };
 		04A7373029376BF4008E9227 /* FitAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7372F29376BF4008E9227 /* FitAPPApp.swift */; };
 		04A7373229376BF4008E9227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7373129376BF4008E9227 /* ContentView.swift */; };
 		04A7373429376BF5008E9227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7373329376BF5008E9227 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 		0468F54C29378DA500CC2C33 /* run.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = run.mp4; sourceTree = "<group>"; };
 		0468F54D29378DA500CC2C33 /* strech.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = strech.mp4; sourceTree = "<group>"; };
 		0468F5572937A3E300CC2C33 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		047AB9FC293B55560084C220 /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		047ABA00293B66D50084C220 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		047ABA03293B6C2C0084C220 /* HistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetails.swift; sourceTree = "<group>"; };
+		047ABA05293B71DB0084C220 /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
+		047ABA07293B76FA0084C220 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		04A7372C29376BF4008E9227 /* FitAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A7372F29376BF4008E9227 /* FitAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitAPPApp.swift; sourceTree = "<group>"; };
 		04A7373129376BF4008E9227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +79,15 @@
 			path = Videos;
 			sourceTree = "<group>";
 		};
+		047ABA02293B6C1A0084C220 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				047ABA00293B66D50084C220 /* Exercise.swift */,
+				047ABA03293B6C2C0084C220 /* HistoryDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		04A7372329376BF4008E9227 = {
 			isa = PBXGroup;
 			children = (
@@ -89,8 +108,10 @@
 			isa = PBXGroup;
 			children = (
 				04A7372F29376BF4008E9227 /* FitAPPApp.swift */,
+				047ABA07293B76FA0084C220 /* Localizable.strings */,
 				04A7374329378965008E9227 /* Views. */,
 				04430DDA293AA938005777CA /* DateExtension.swift */,
+				047ABA02293B6C1A0084C220 /* Model */,
 				04A7373329376BF5008E9227 /* Assets.xcassets */,
 				0468F55429378F2000CC2C33 /* Videos */,
 				04A7373529376BF5008E9227 /* Preview Content */,
@@ -102,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				04A7373629376BF5008E9227 /* Preview Assets.xcassets */,
+				047ABA05293B71DB0084C220 /* HistoryStoreDevData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -115,6 +137,7 @@
 				0468F5572937A3E300CC2C33 /* HeaderView.swift */,
 				04A7373D29376F0F008E9227 /* RatingView.swift */,
 				04430DD8293A99AC005777CA /* HistoryView.swift */,
+				047AB9FC293B55560084C220 /* SuccessView.swift */,
 			);
 			name = Views.;
 			sourceTree = "<group>";
@@ -181,6 +204,7 @@
 				0468F55129378DA600CC2C33 /* abs.mp4 in Resources */,
 				0468F55329378DA600CC2C33 /* strech.mp4 in Resources */,
 				04A7373729376BF5008E9227 /* Preview Assets.xcassets in Resources */,
+				047ABA08293B76FA0084C220 /* Localizable.strings in Resources */,
 				04A7373429376BF5008E9227 /* Assets.xcassets in Resources */,
 				0468F55029378DA600CC2C33 /* pushup.mp4 in Resources */,
 				0468F54F29378DA600CC2C33 /* squat.mp4 in Resources */,
@@ -195,10 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047ABA06293B71DB0084C220 /* HistoryStoreDevData.swift in Sources */,
 				04430DD9293A99AC005777CA /* HistoryView.swift in Sources */,
 				04430DDB293AA938005777CA /* DateExtension.swift in Sources */,
 				04A7373E29376F0F008E9227 /* RatingView.swift in Sources */,
+				047ABA04293B6C2C0084C220 /* HistoryDetails.swift in Sources */,
 				0468F5582937A3E300CC2C33 /* HeaderView.swift in Sources */,
+				047AB9FD293B55560084C220 /* SuccessView.swift in Sources */,
+				047ABA01293B66D50084C220 /* Exercise.swift in Sources */,
 				04A7373229376BF4008E9227 /* ContentView.swift in Sources */,
 				04A7373029376BF4008E9227 /* FitAPPApp.swift in Sources */,
 				04A7374029378934008E9227 /* WelcomeView.swift in Sources */,
