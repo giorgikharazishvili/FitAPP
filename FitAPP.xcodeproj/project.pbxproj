@@ -21,6 +21,7 @@
 		047ABA04293B6C2C0084C220 /* HistoryDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047ABA03293B6C2C0084C220 /* HistoryDetails.swift */; };
 		047ABA06293B71DB0084C220 /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047ABA05293B71DB0084C220 /* HistoryStoreDevData.swift */; };
 		047ABA08293B76FA0084C220 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 047ABA07293B76FA0084C220 /* Localizable.strings */; };
+		049391D3295E3C140075BE5B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 049391D2295E3C140075BE5B /* TimerView.swift */; };
 		04A7373029376BF4008E9227 /* FitAPPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7372F29376BF4008E9227 /* FitAPPApp.swift */; };
 		04A7373229376BF4008E9227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A7373129376BF4008E9227 /* ContentView.swift */; };
 		04A7373429376BF5008E9227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A7373329376BF5008E9227 /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		047ABA03293B6C2C0084C220 /* HistoryDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDetails.swift; sourceTree = "<group>"; };
 		047ABA05293B71DB0084C220 /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
 		047ABA07293B76FA0084C220 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		049391D2295E3C140075BE5B /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		04A7372C29376BF4008E9227 /* FitAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A7372F29376BF4008E9227 /* FitAPPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitAPPApp.swift; sourceTree = "<group>"; };
 		04A7373129376BF4008E9227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 				04A7373D29376F0F008E9227 /* RatingView.swift */,
 				04430DD8293A99AC005777CA /* HistoryView.swift */,
 				047AB9FC293B55560084C220 /* SuccessView.swift */,
+				049391D2295E3C140075BE5B /* TimerView.swift */,
 			);
 			name = Views.;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				04430DDB293AA938005777CA /* DateExtension.swift in Sources */,
 				04A7373E29376F0F008E9227 /* RatingView.swift in Sources */,
 				047ABA04293B6C2C0084C220 /* HistoryDetails.swift in Sources */,
+				049391D3295E3C140075BE5B /* TimerView.swift in Sources */,
 				0468F5582937A3E300CC2C33 /* HeaderView.swift in Sources */,
 				047AB9FD293B55560084C220 /* SuccessView.swift in Sources */,
 				047ABA01293B66D50084C220 /* Exercise.swift in Sources */,

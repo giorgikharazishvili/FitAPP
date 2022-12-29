@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var selectedTab = 9
+    
     var body: some View {
-        TabView {
-            WelcomeView()
-            ForEach(0..<Exercise.exercises.count) { number in
-                ExerciseView(index: number)
+        TabView(selection: $selectedTab) {
+            WelcomeView(selectedTab: $selectedTab)
+                .tag(9)
+            ForEach(0..<Exercise.exercises.count) { index in
+                ExerciseView(selectedTab: $selectedTab, index: index)
+                    .tag(index)
             }
             Text("Exercise2")
         }

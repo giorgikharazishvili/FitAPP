@@ -8,34 +8,35 @@
 import SwiftUI
 
 struct HeaderView: View {
+    @Binding var selectedTab: Int
     let titleText: String
     
     var body: some View {
-        VStack {
-            Text(titleText)
-                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                .fontWeight(.heavy)
-                .foregroundColor(Color.black)
-            HStack {
-                Image(systemName: "hands.sparkles.fill")
-                    .foregroundColor(Color.black)
-                Image(systemName: "1.circle")
-                Image(systemName: "2.circle")
-                Image(systemName: "3.circle")
-                Image(systemName: "4.circle")
+            VStack {
+                Text(titleText)
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
+                    .fontWeight(.heavy)
+                HStack {
+                    ForEach(0 ..< Exercise.exercises.count) { index in
+                        let fill = index == selectedTab ? ".fill" : ""
+                        Image(systemName: "\(index + 1).circle\(fill)")
+                            .onTapGesture {
+                                selectedTab = index
+                            }
+                            .foregroundColor(.white)
+                    }
+                }
+                .font(.title2)
             }
-            .font(.title2)
         }
     }
-}
 
 struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            HeaderView(titleText: "Stretch")
+            HeaderView(selectedTab: .constant(0), titleText: "Squat")
                 .previewLayout(.sizeThatFits)
-//            HeaderView(exerciseName: "Stretch")
-//                .previewLayout(.sizeThatFits)
         }
     }
 }

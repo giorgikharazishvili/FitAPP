@@ -8,18 +8,31 @@
 import SwiftUI
 
 struct WelcomeView: View {
+    @State private var showHistory = false
+    @Binding var selectedTab: Int
+    
     var body: some View {
         ZStack {
             RadialGradient(gradient: Gradient(colors: [Color.black, Color.blue]), center:.center, startRadius: 20, endRadius: 550).ignoresSafeArea()
             VStack {
-                HeaderView(titleText: "Welcome")
+                HeaderView(selectedTab: $selectedTab, titleText: "Welcome")
                     .foregroundColor(.white)
+                
                 Spacer()
-                Button("History") {}
-                    .padding(.bottom)
-                    .fontWeight(.bold)
-                    .font(.title3)
-                    .foregroundColor(.white)
+                Button("History") {
+                    showHistory.toggle()
+                }
+                .font(.title2)
+                .fontWeight(.heavy)
+                .padding(5)
+                .background(.secondary)
+                .cornerRadius(10)
+                .padding( .top, 100)
+                .sheet(isPresented: $showHistory) {
+                    HistoryView(showHistory: $showHistory)
+                }
+                
+                    
             }
             VStack {
                 HStack(alignment: .center) {
@@ -42,7 +55,7 @@ struct WelcomeView: View {
                         .clipShape(Circle())
                 }
                 
-                Button(action: {} ) {
+                Button(action: { selectedTab = 0 }) {
                     Text("Get Started")
                     Image(systemName: "arrow.right.circle")
                 }
@@ -62,6 +75,6 @@ struct WelcomeView: View {
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        WelcomeView(selectedTab: .constant(9))
     }
 }
