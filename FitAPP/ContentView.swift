@@ -21,7 +21,7 @@ struct ContentView: View {
             }
             Text("Exercise2")
         }
-        
+        .environmentObject(HistoryStore())
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         .ignoresSafeArea()
         

@@ -14,6 +14,10 @@ struct ExerciseView: View {
     @State private var showHistory = false
     @State private var showSuccess = false
     @Binding var selectedTab: Int
+    @State private var timerDone = false
+    @State private var showTimer = false
+    
+    @EnvironmentObject var history: HistoryStore
     
     //    let videoNames = ["strech", "run", "squat", "pushup", "abs", "plank"]
     //    let exerciseNames = ["Stretch", "Run", "Squat", "Pushup", "Abs", "Plank"]
@@ -44,16 +48,11 @@ struct ExerciseView: View {
                             .foregroundColor(.red)
                     }
                     
-                    TimerView(timerDone: .constant(true))
-                        .cornerRadius(5)
-                        .shadow(color: .blue, radius: 1, x: 0, y: 0)
-                        .padding(.top ,30)
-                    
-                    RatingView(rating: $rating)
-                        .padding(.top, 5)
                     
                     HStack(spacing: 150) {
-                        Button("Start") {}
+                        Button("REST") {
+                            showTimer.toggle()
+                        }
                             .font(.title2)
                             .fontWeight(.black)
                             .padding()
@@ -64,13 +63,18 @@ struct ExerciseView: View {
                             .cornerRadius(40)
                             .padding(.top, 20)
                             .shadow(color: .blue, radius: 3, x: 0, y: 0)
-                        Button("Done") {
+                        Button("DONE") {
+                            history.addDoneExercise(Exercise.exercises[index].exerciseName)
+                            timerDone = false
+                            showTimer.toggle()
                             if lastExercise {
                                 showSuccess.toggle()
                             } else {
                                 selectedTab += 1
                             }
+                                                        
                         }
+                        
                         .font(.title2)
                         .fontWeight(.black)
                         .padding()
@@ -81,11 +85,22 @@ struct ExerciseView: View {
                         .cornerRadius(40)
                         .padding(.top, 20)
                         .shadow(color: .blue, radius: 3, x: 0, y: 0)
-                        
+                        .disabled(!timerDone)
                         .sheet(isPresented: $showSuccess) {
                             SuccessView(selectedTab: $selectedTab)
                         }
                     }
+                    
+                    if showTimer {
+                        TimerView(timerDone: $timerDone)
+                            .cornerRadius(5)
+                            .shadow(color: .blue, radius: 1, x: 0, y: 0)
+                            .padding(.top ,30)
+                    }
+                    
+                    Spacer()
+                    RatingView(rating: $rating)
+                        .padding(.bottom, 5)
                     
                     Button("History") {
                         showHistory.toggle()
@@ -100,7 +115,9 @@ struct ExerciseView: View {
                         HistoryView(showHistory: $showHistory)
                     }
                 }
+                
             }
+            
         }
     }
 }
@@ -108,6 +125,7 @@ struct ExerciseView: View {
 
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(selectedTab: .constant(3), index: 3)
+        ExerciseView(selectedTab: .constant(0), index: (0))
+            .environmentObject(HistoryStore())
     }
 }

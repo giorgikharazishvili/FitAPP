@@ -7,17 +7,18 @@
 import SwiftUI
 
 struct TimerView: View {
-    @State private var timeRemaining = 30
+    @State private var timeRemaining = 5
     @Binding var timerDone: Bool
     let timer = Timer.publish(
         every: 1,
         on: .main,
         in: .common)
         .autoconnect()
+    
     var body: some View {
         Text("\(timeRemaining)")
-            .padding(.leading, 30)
-            .padding(.trailing, 30)
+            .padding(.leading, 50)
+            .padding(.trailing, 50)
             .font(.system(size: 60))
             .foregroundColor(.white)
             .font(.largeTitle)
