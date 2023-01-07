@@ -7,11 +7,32 @@
 
 import SwiftUI
 
+
 @main
-struct FitAPPApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
+struct FitApp: App {
+  @StateObject private var historyStore: HistoryStore
+  @State private var showAlert = false
+
+  init() {
+    let historyStore: HistoryStore
+    do {
+      historyStore = try HistoryStore(withChecking: true)
+    } catch {
+      historyStore = HistoryStore()
+      showAlert = true
+    }
+    _historyStore = StateObject(wrappedValue: historyStore)
+  }
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+        .environmentObject(historyStore)
+        .onAppear {
+          print(FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask))
         }
     }
+  }
 }

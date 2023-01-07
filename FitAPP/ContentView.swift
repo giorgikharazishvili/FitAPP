@@ -21,7 +21,6 @@ struct ContentView: View {
             }
             Text("Exercise2")
         }
-        .environmentObject(HistoryStore())
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
         .ignoresSafeArea()
         
@@ -31,5 +30,10 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .onAppear {
+            print(FileManager.default.urls(
+            for: .documentDirectory,
+            in: .userDomainMask))
+            }
     }
 }
